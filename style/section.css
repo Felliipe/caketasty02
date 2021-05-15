@@ -4,7 +4,7 @@
     width: 100vw;
     height: 7.6rem;
 }
- 
+
 .effectFooter img {
     width: inherit;
 }
@@ -104,7 +104,6 @@
     }
     
     #backgroundPrimare img {
-        position: relative;
         top: -4rem;
     }
 
@@ -112,3 +111,33 @@
         top: 11rem;
     }
 } 
+
+@media screen and (max-width: 620px) {
+    #backgroundPrimare h1,
+    #backgroundPrimare h2 {
+        font-size: 3rem;
+    }
+
+    #backgroundPrimare div {
+        top: -2rem;
+    }
+
+    #backgroundPrimare img {
+        top: -7rem;
+    }
+
+    #backgroundPrimare img {
+        top: -4rem;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    #backgroundPrimare h1,
+    #backgroundPrimare h2 {
+        font-size: 2.5rem;
+    }
+    #backgroundPrimare img {
+        top: -4rem;
+    }
+}
