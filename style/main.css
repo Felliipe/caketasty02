@@ -42,7 +42,7 @@ main p {
     margin: 0.3rem;
 }
 
-main p:nth-child(4) {
+main p:nth-child(5) {
     color: var(--gray-400);
     font-weight: 600;
 }
