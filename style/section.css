@@ -1,0 +1,114 @@
+.effectFooter {
+    background-color: #ff798e;
+
+    width: 100vw;
+    height: 7.6rem;
+}
+
+.effectFooter img {
+    width: inherit;
+}
+
+#backgroundPrimare {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+
+
+#backgroundPrimare h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 7rem;
+    color: #ffccd2;
+
+    text-shadow: 3px 2px #fff;
+
+    text-transform: uppercase;
+}
+
+#backgroundPrimare h2{
+    font-family: 'Sacramento', sans-serif;
+    
+    color: #33190a;
+    font-size: 7rem;
+
+    transform: rotate(-20deg);
+}
+
+#backgroundPrimare div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 9rem;
+}
+
+#backgroundPrimare img {
+    width: 46%;
+
+    z-index: 9;
+}
+
+#backgroundPrimare img:first-child {
+    position: absolute;
+
+    z-index: -1;
+
+    width: 100vw;
+
+    top: 10rem;
+}
+
+
+@media screen and (max-width: 980px) {
+    .effectFooter img {
+        width: 100vw;
+    }
+
+    #backgroundPrimare {
+        height: auto;
+    }
+
+    #backgroundPrimare h1,
+    #backgroundPrimare h2 {
+        font-size: 5rem;
+    }
+
+    #backgroundPrimare div {
+        top: 0.065rem;
+    }
+
+    #backgroundPrimare img {
+        position: relative;
+        top: -6rem;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    #backgroundPrimare h1,
+    #backgroundPrimare h2 {
+        font-size: 3.5rem;
+    }
+
+    #backgroundPrimare div {
+        top: 0rem;
+    }
+    
+    #backgroundPrimare img {
+        position: relative;
+        top: -4.2rem;
+    }
+
+    #backgroundPrimare img:first-child {
+        top: 11rem;
+    }
+} 

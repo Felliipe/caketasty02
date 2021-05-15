@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 100vw;
+    height: 5rem;
+    background: var(--background-pink);
+    
+}
+
+header .logo {
+    max-width: 400px;
+}
+
+header .logo svg {
+    width: 50%;
+}
+
+header svg  {
+    fill: rgb(255, 255, 255);
+
+}
+
+header ul { 
+    display: flex;
+
+    flex-direction: row;
+
+    transition: .2s linear;
+}
+
+header ul li {
+    list-style: none;
+    
+    margin-left: 1.5rem;
+
+}
+
+header ul li svg {
+    fill: rgb(255, 255, 255);
+
+    width: 1.4rem;
+}
+
+header ul li a {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    
+    
+
+    font-size: 1rem;
+    color: var(--gray-50);
+}
+
+header ul li a svg {
+    margin-right: .5rem;
+}
+
+.buttonToggle {
+    display: none;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+
+    width: 2rem;
+}
+
+.buttonToggle span {
+    display: block;
+    
+    height: 3px;
+
+    background-color: var(--gray-100);
+
+    margin: 6px 0;
+
+    position: relative;
+
+    transition: .3s linear;
+
+
+}
+
+@media screen and (max-width: 980px){ 
+    header ul {
+        display: none;
+        
+    }
+
+    .buttonToggle {
+        display: block;
+    }
+
+    header {
+        justify-content: space-around;
+
+        padding: 1.5rem;
+    }
+
+
+
+
+}
